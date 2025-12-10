@@ -96,6 +96,7 @@ def load_data():
         train_data = pd.read_csv('mushrooms_mini.csv').iloc[:, 1:]
         return model, train_data
     except Exception as e:
+        st.error(f"Hata detayları: {e}")
         return None, None
 
 model, train_data = load_data()
