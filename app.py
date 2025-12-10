@@ -81,7 +81,7 @@ st.markdown("""
 with st.sidebar:
     st.header("ℹ️ About this app")
     st.markdown("""
-    This app uses a **Random Forest Classifier** trained on the classic **UCI Mushroom dataset**.
+    This app uses a **Random Forest ffClassifier** trained on the classic **UCI Mushroom dataset**.
     
     *   **Inputs:** Categorical mushroom features
     *   **Output:** Edible vs. poisonous prediction
