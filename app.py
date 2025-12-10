@@ -40,12 +40,39 @@ st.markdown("""
         color: #424242;
     }
     .info-box {
-        background-color: #e8f5e9;
-        color: #000000;
+        background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%);
+        color: #1b5e20;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-weight: 500;
+        border: 1px solid rgba(255,255,255,0.4);
+    }
+    .info-icon {
+        font-size: 24px;
+        margin-right: 15px;
+        background: rgba(255,255,255,0.8);
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .disclaimer-box {
+        background: #fff3cd;
+        color: #856404;
         padding: 15px;
-        border-radius: 10px;
-        border-left: 5px solid #2E7D32;
-        margin-bottom: 20px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+        border: 1px solid #ffeeba;
+        margin-top: 40px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     </style>
     """, unsafe_allow_html=True)
@@ -55,7 +82,10 @@ st.title("🍄 Professional Mushroom Analysis System")
 
 st.markdown("""
 <div class="info-box">
-    ℹ️ According to UCI ML, our model provides correct results with 0.1% error.
+    <div class="info-icon">📊</div>
+    <div>
+        <strong>Model Accuracy:</strong> According to UCI ML standards, this model performs with <strong>0.1% error rate</strong>.
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -191,7 +221,7 @@ else:
     st.error("Required files (model or dataset) not found.")
 
 st.markdown("""
-    <div style='text-align: center; color: gray; font-size: 12px; margin-top: 50px;'>
-        ⚠️ Errors may occur. Please be careful before eating.
+    <div class="disclaimer-box">
+        ⚠️ <strong>Disclaimer:</strong> Errors may occur in automated predictions. Please be careful and verify before consumption.
     </div>
 """, unsafe_allow_html=True)
