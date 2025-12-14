@@ -213,10 +213,10 @@ if model and train_data is not None:
             
             with col_res1:
                 if str(result) == '0':
-                    st.image("https://cdn-icons-png.flaticon.com/512/1828/1828643.png", width=150) # Green Check
+                    #https://cdn-icons-png.flaticon.com/512/1828/1828643.png
+                    st.image("https://cdn-icons-png.flaticon.com/512/190/190411.png", width=150) # Green Check
                 else:
-                    #https://cdn-icons-png.flaticon.com/512/1828/1828843.png
-                    st.image("https://cdn-icons-png.flaticon.com/512/190/190411.png", width=150) # Red Warning
+                    st.image("https://cdn-icons-png.flaticon.com/512/1828/1828843.png", width=150) # Red Warning
 
             with col_res2:
                 st.markdown("### Analysis Result:")
